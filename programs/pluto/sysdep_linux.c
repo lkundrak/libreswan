@@ -301,7 +301,7 @@ struct raw_iface *find_raw_ifaces6(void)
 			/* ??? I hate and distrust scanf -- DHR */
 			int r = fscanf(proc_sock,
 				       "%4hx%4hx%4hx%4hx%4hx%4hx%4hx%4hx"
-				       " %02x %02x %02x %02x %20s\n",
+				       " %x %02x %02x %02x %20s\n",
 				       xb + 0, xb + 1, xb + 2, xb + 3, xb + 4,
 				       xb + 5, xb + 6, xb + 7,
 				       &if_idx, &plen, &scope, &dad_status,
